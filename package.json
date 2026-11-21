@@ -1,0 +1,52 @@
+{
+  "name": "opencode-gemini-app-auth",
+  "version": "0.1.0",
+  "description": "Zero-dependency native HTTP/2 Google Gemini App provider plugin for Magpie and OpenCode (official quota windows, multi-account pooling, caller-validated tools, structured outputs, and image inputs).",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./server": "./index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "lib/",
+    "core/",
+    "README.md",
+    "LICENSE",
+    "DISCLAIMER.md"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "magpie-plugin",
+    "gemini",
+    "gemini-app",
+    "provider",
+    "auth"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/50ways2sayhard/magpie-gemini-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/50ways2sayhard/magpie-gemini-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/50ways2sayhard/magpie-gemini-app/issues"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "magpie": {
+    "name": "Google Gemini App",
+    "maxConcurrency": 4,
+    "summary": {
+      "en": "Direct native HTTP/2 Google Gemini App provider with official quota windows and multi-account support.",
+      "zh": "原生 HTTP/2 直连 Google Gemini App，支持官方 5h/每周配额与多账号调度。"
+    }
+  },
+  "scripts": {
+    "sync-core": "node scripts/sync-core.mjs",
+    "test": "bun test test/"
+  }
+}
